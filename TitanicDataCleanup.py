@@ -51,16 +51,16 @@ def DataClean(File, NewFile):
     #Create a new column that contains the new values for Cabin and add it to the end of the Data dataframe
     Data.insert(loc=len(Data.columns), column='Cabin.Letters', value=DataCabin)
 
-    #Change Embarked location to first letter of location or Unknown if nothing is listed 
+    #Change Embarked location to full name of the location, or to unknown if it is blank, this is done to make graph labels in R easier 
     for k in range(Length):
         if pandas.isnull(Data['Embarked'][k]):
             Data.at[k, 'Embarked'] = 'Unknown'
-        elif Data['Embarked'][k] == 'Cherbourg':
-            Data.at[k, 'Embarked'] = 'C'
-        elif Data['Embarked'][k] == 'Southhampton':
-            Data.at[k, 'Embarked'] = 'S'
-        elif Data['Embarked'][k] == 'Queenstown':
-            Data.at[k, 'Embarked'] = 'Q'
+        elif Data['Embarked'][k] == 'C':
+            Data.at[k, 'Embarked'] = 'Cherbourg'
+        elif Data['Embarked'][k] == 'S':
+            Data.at[k, 'Embarked'] = 'Southhampton'
+        elif Data['Embarked'][k] == 'Q':
+            Data.at[k, 'Embarked'] = 'Queenstown'
     #Create list for Fare column values
     DataFare = Data['Fare'].to_list()
 
@@ -72,3 +72,4 @@ def DataClean(File, NewFile):
     Data.to_csv(NewFile)
 
 
+    
