@@ -1,12 +1,9 @@
 import pandas
-import xlrd
-import openpyxl
-import numpy as np
 
-#Function reads in excel file containing Titanic data and cleans the data, NewFile writes cleaned data to new file 
+#Function reads in csv file containing Titanic data and cleans the data, NewFile writes cleaned data to new file 
 def DataClean(File, NewFile):
-    #Read in excel File
-    Data = pandas.read_excel(File)
+    #Read in csv File
+    Data = pandas.read_csv(File)
 
     #Create list for Ticket column values 
     DataTicket = Data['Ticket'].to_list()
