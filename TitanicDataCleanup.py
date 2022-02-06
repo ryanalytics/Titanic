@@ -8,8 +8,11 @@ def DataClean(File, NewFile):
     #Create list for Ticket column values 
     DataTicket = Data['Ticket'].to_list()
 
+    #Variable for number of rows to use when running the for loops 
+    Length = len(DataTicket)
+
     #Changes Ticket information into similiar groups based on if they are purely numerical, or based on the lettering on beginning of ticket
-    for i in range(len(DataTicket)):
+    for i in range(Length):
         #If ticket is integers only change its value to 'num'
         if isinstance(DataTicket[i], int):
             DataTicket[i] = 'num'
@@ -31,7 +34,7 @@ def DataClean(File, NewFile):
     CabinTemp = []
 
     #Take all values in Cabin and change them to the first letter of the cabins room
-    for j in range(DataCabin):
+    for j in range(Length):
         #If there is no value in this selection change it to None
         if pandas.isnull(DataCabin[j]):
             CabinTemp.append('None')
@@ -49,7 +52,7 @@ def DataClean(File, NewFile):
     Data.insert(loc=len(Data.columns), column='Cabin.Letters', value=DataCabin)
 
     #Change Embarked location to first letter of location or Unknown if nothing is listed 
-    for k in len(DataCabin):
+    for k in range(Length):
         if pandas.isnull(Data['Embarked'][k]):
             Data.at[k, 'Embarked'] = 'Unknown'
         elif Data['Embarked'][k] == 'C':
@@ -67,3 +70,6 @@ def DataClean(File, NewFile):
 
     #Save data frame changes to new csv file 
     Data.to_csv(NewFile)
+
+
+DataClean('C:/Users/Owner/Desktop/Folders/Projects/Titanic/train.csv', 'C:/Users/Owner/Desktop/train2.csv')
