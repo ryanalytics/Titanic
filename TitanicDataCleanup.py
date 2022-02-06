@@ -14,7 +14,8 @@ def DataClean(File, NewFile):
     #Changes Ticket information into similiar groups based on if they are purely numerical, or based on the lettering on beginning of ticket
     for i in range(Length):
         #If ticket is integers only change its value to 'num'
-        if isinstance(DataTicket[i], int):
+        if DataTicket[i][0] == '0' or DataTicket[i][0] == '1' or DataTicket[i][0] == '2' or DataTicket[i][0] == '3' or DataTicket[i][0] == '4' or DataTicket[i][0] == '5' or DataTicket[i][0] == '6' or DataTicket[i][0] == '7' \
+        or DataTicket[i][0] == '8' or DataTicket[i][0] == '9':
             DataTicket[i] = 'num'
         #If ticket includes letters and punctuation, remove all numbers and punctuation and change ticket to the remaing letters
         else:
@@ -70,6 +71,7 @@ def DataClean(File, NewFile):
 
     #Save data frame changes to new csv file 
     Data.to_csv(NewFile)
+
 
 
     
