@@ -4,7 +4,6 @@ import pandas
 def DataClean(File, NewFile):
     #Read in csv File
     Data = pandas.read_csv(File)
-
     #Create list for Ticket column values 
     DataTicket = Data['Ticket'].to_list()
 
@@ -37,7 +36,7 @@ def DataClean(File, NewFile):
     #Take all values in Cabin and change them to the first letter of the cabins room
     for j in range(Length):
         #If there is no value in this selection change it to None
-        if pandas.isnull(DataCabin[j]):
+        if pandas.isna(DataCabin[j]):
             CabinTemp.append('None')
         #If the value is just one letter keep that value 
         elif len(DataCabin[j]) == 1:
@@ -50,7 +49,7 @@ def DataClean(File, NewFile):
             CabinTemp.append(DataCabin[j][0])
 
     #Create a new column that contains the new values for Cabin and add it to the end of the Data dataframe
-    Data.insert(loc=len(Data.columns), column='Cabin.Letters', value=DataCabin)
+    Data.insert(loc=len(Data.columns), column='Cabin.Letters', value=CabinTemp)
 
     #Change Embarked location to full name of the location, or to unknown if it is blank, this is done to make graph labels in R easier 
     for k in range(Length):
@@ -71,6 +70,8 @@ def DataClean(File, NewFile):
 
     #Save data frame changes to new csv file 
     Data.to_csv(NewFile)
+
+  
 
 
 
