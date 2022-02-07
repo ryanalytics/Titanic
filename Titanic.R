@@ -9,9 +9,7 @@ library('reticulate')
 library('pivottabler')
 library('tidyr')
 
-PyLoc <- 'C:/Users/Owner/AppData/Local/Programs/Python/Python310' 
-PyFileLoc <- 'C:/Users/Owner/Desktop/Projects/Titanic'
-TrainLoc <- 'C:/Users/Owner/Desktop/Projects/Titanic/TrainClean.csv'
+
 
 #Use reticalute package to run python file that cleans data
 
