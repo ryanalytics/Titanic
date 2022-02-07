@@ -9,8 +9,6 @@ library('reticulate')
 library('pivottabler')
 library('tidyr')
 
-
-
 #Use reticalute package to run python file that cleans data
 
 #Sets location for python 
