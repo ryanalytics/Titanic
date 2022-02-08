@@ -1,6 +1,3 @@
-library('readxl')
-library('openxlsx')
-library('writexl')
 library('psych')
 library('ggplot2')
 library('moments')
@@ -110,3 +107,12 @@ SurG10 <- ggplot(train, aes(x=Embarked)) + geom_histogram(stat='count', fill = '
 SurG10
 #Pivot table of survivors by location of embarkment 
 qhpvt(train, 'Embarked', 'Survived', 'n()')
+
+dev.new()
+
+
+#Create a correlation table to check for multicollinearity
+x <- cor(train[,c(6,7,8,10)], , use = 'complete.obs', method = c("pearson", "kendall", "spearman"))
+melted_x <- melt(x)
+ggplot(data = melted_x, aes(x=Var1, y=Var2, fill=value)) + geom_tile()
+
