@@ -56,7 +56,7 @@
 54,55,0,1,"Ostby, Mr. Engelhart Cornelius",male,65.0,0,1,113509,61.98,B30,Cherbourg,num,B
 55,56,1,1,"Woolner, Mr. Hugh",male,,0,0,19947,35.5,C52,Southhampton,num,C
 56,57,1,2,"Rugg, Miss. Emily",female,21.0,0,0,C.A. 31026,10.5,,Southhampton,ca,None
-57,58,0,3,"Novel, Mr. Mansouer",male,28.5,0,0,2697,7.23,,Cherbourg,num,None
+57,58,0,3,"Novel, Mr. Mansouer",male,28.0,0,0,2697,7.23,,Cherbourg,num,None
 58,59,1,2,"West, Miss. Constance Mirium",female,5.0,1,2,C.A. 34651,27.75,,Southhampton,ca,None
 59,60,0,3,"Goodwin, Master. William Frederick",male,11.0,5,2,CA 2144,46.9,,Southhampton,ca,None
 60,61,0,3,"Sirayanian, Mr. Orsen",male,22.0,0,0,2669,7.23,,Cherbourg,num,None
@@ -77,7 +77,7 @@
 75,76,0,3,"Moen, Mr. Sigurd Hansen",male,25.0,0,0,348123,7.65,F G73,Southhampton,num,G
 76,77,0,3,"Staneff, Mr. Ivan",male,,0,0,349208,7.9,,Southhampton,num,None
 77,78,0,3,"Moutal, Mr. Rahamin Haim",male,,0,0,374746,8.05,,Southhampton,num,None
-78,79,1,2,"Caldwell, Master. Alden Gates",male,0.83,0,2,248738,29.0,,Southhampton,num,None
+78,79,1,2,"Caldwell, Master. Alden Gates",male,0.0,0,2,248738,29.0,,Southhampton,num,None
 79,80,1,3,"Dowdell, Miss. Elizabeth",female,30.0,0,0,364516,12.48,,Southhampton,num,None
 80,81,0,3,"Waelens, Mr. Achille",male,22.0,0,0,345767,9.0,,Southhampton,num,None
 81,82,1,3,"Sheerlinck, Mr. Jan Baptist",male,29.0,0,0,345779,9.5,,Southhampton,num,None
@@ -110,19 +110,19 @@
 108,109,0,3,"Rekic, Mr. Tido",male,38.0,0,0,349249,7.9,,Southhampton,num,None
 109,110,1,3,"Moran, Miss. Bertha",female,,1,0,371110,24.15,,Queenstown,num,None
 110,111,0,1,"Porter, Mr. Walter Chamberlain",male,47.0,0,0,110465,52.0,C110,Southhampton,num,C
-111,112,0,3,"Zabour, Miss. Hileni",female,14.5,1,0,2665,14.45,,Cherbourg,num,None
+111,112,0,3,"Zabour, Miss. Hileni",female,14.0,1,0,2665,14.45,,Cherbourg,num,None
 112,113,0,3,"Barton, Mr. David John",male,22.0,0,0,324669,8.05,,Southhampton,num,None
 113,114,0,3,"Jussila, Miss. Katriina",female,20.0,1,0,4136,9.82,,Southhampton,num,None
 114,115,0,3,"Attalah, Miss. Malake",female,17.0,0,0,2627,14.46,,Cherbourg,num,None
 115,116,0,3,"Pekoniemi, Mr. Edvard",male,21.0,0,0,STON/O 2. 3101294,7.92,,Southhampton,stono,None
-116,117,0,3,"Connors, Mr. Patrick",male,70.5,0,0,370369,7.75,,Queenstown,num,None
+116,117,0,3,"Connors, Mr. Patrick",male,70.0,0,0,370369,7.75,,Queenstown,num,None
 117,118,0,2,"Turpin, Mr. William John Robert",male,29.0,1,0,11668,21.0,,Southhampton,num,None
 118,119,0,1,"Baxter, Mr. Quigg Edmond",male,24.0,0,1,PC 17558,247.52,B58 B60,Cherbourg,pc,B
 119,120,0,3,"Andersson, Miss. Ellis Anna Maria",female,2.0,4,2,347082,31.28,,Southhampton,num,None
 120,121,0,2,"Hickman, Mr. Stanley George",male,21.0,2,0,S.O.C. 14879,73.5,,Southhampton,soc,None
 121,122,0,3,"Moore, Mr. Leonard Charles",male,,0,0,A4. 54510,8.05,,Southhampton,a4,None
-122,123,0,2,"Nasser, Mr. Nicholas",male,32.5,1,0,237736,30.07,,Cherbourg,num,None
-123,124,1,2,"Webber, Miss. Susan",female,32.5,0,0,27267,13.0,E101,Southhampton,num,E
+122,123,0,2,"Nasser, Mr. Nicholas",male,32.0,1,0,237736,30.07,,Cherbourg,num,None
+123,124,1,2,"Webber, Miss. Susan",female,32.0,0,0,27267,13.0,E101,Southhampton,num,E
 124,125,0,1,"White, Mr. Percival Wayland",male,54.0,0,1,35281,77.29,D26,Southhampton,num,D
 125,126,1,3,"Nicola-Yarred, Master. Elias",male,12.0,1,0,2651,11.24,,Cherbourg,num,None
 126,127,0,3,"McMahon, Mr. Martin",male,,0,0,370372,7.75,,Queenstown,num,None
@@ -147,12 +147,12 @@
 145,146,0,2,"Nicholls, Mr. Joseph Charles",male,19.0,1,1,C.A. 33112,36.75,,Southhampton,ca,None
 146,147,1,3,"Andersson, Mr. August Edvard (""Wennerstrom"")",male,27.0,0,0,350043,7.8,,Southhampton,num,None
 147,148,0,3,"Ford, Miss. Robina Maggie ""Ruby""",female,9.0,2,2,W./C. 6608,34.38,,Southhampton,wc,None
-148,149,0,2,"Navratil, Mr. Michel (""Louis M Hoffman"")",male,36.5,0,2,230080,26.0,F2,Southhampton,num,F
+148,149,0,2,"Navratil, Mr. Michel (""Louis M Hoffman"")",male,36.0,0,2,230080,26.0,F2,Southhampton,num,F
 149,150,0,2,"Byles, Rev. Thomas Roussel Davids",male,42.0,0,0,244310,13.0,,Southhampton,num,None
 150,151,0,2,"Bateman, Rev. Robert James",male,51.0,0,0,S.O.P. 1166,12.52,,Southhampton,sop,None
 151,152,1,1,"Pears, Mrs. Thomas (Edith Wearne)",female,22.0,1,0,113776,66.6,C2,Southhampton,num,C
-152,153,0,3,"Meo, Mr. Alfonzo",male,55.5,0,0,A.5. 11206,8.05,,Southhampton,a5,None
-153,154,0,3,"van Billiard, Mr. Austin Blyler",male,40.5,0,2,A/5. 851,14.5,,Southhampton,a5,None
+152,153,0,3,"Meo, Mr. Alfonzo",male,55.0,0,0,A.5. 11206,8.05,,Southhampton,a5,None
+153,154,0,3,"van Billiard, Mr. Austin Blyler",male,40.0,0,2,A/5. 851,14.5,,Southhampton,a5,None
 154,155,0,3,"Olsen, Mr. Ole Martin",male,,0,0,Fa 265302,7.31,,Southhampton,fa,None
 155,156,0,1,"Williams, Mr. Charles Duane",male,51.0,0,1,PC 17597,61.38,,Cherbourg,pc,None
 156,157,1,3,"Gilnagh, Miss. Katherine ""Katie""",female,16.0,0,0,35851,7.73,,Queenstown,num,None
@@ -202,7 +202,7 @@
 200,201,0,3,"Vande Walle, Mr. Nestor Cyriel",male,28.0,0,0,345770,9.5,,Southhampton,num,None
 201,202,0,3,"Sage, Mr. Frederick",male,,8,2,CA. 2343,69.55,,Southhampton,ca,None
 202,203,0,3,"Johanson, Mr. Jakob Alfred",male,34.0,0,0,3101264,6.5,,Southhampton,num,None
-203,204,0,3,"Youseff, Mr. Gerious",male,45.5,0,0,2628,7.22,,Cherbourg,num,None
+203,204,0,3,"Youseff, Mr. Gerious",male,45.0,0,0,2628,7.22,,Cherbourg,num,None
 204,205,1,3,"Cohen, Mr. Gurshon ""Gus""",male,18.0,0,0,A/5 3540,8.05,,Southhampton,a5,None
 205,206,0,3,"Strom, Miss. Telma Matilda",female,2.0,0,1,347054,10.46,G6,Southhampton,num,G
 206,207,0,3,"Backstrom, Mr. Karl Alfred",male,32.0,1,0,3101278,15.85,,Southhampton,num,None
@@ -226,7 +226,7 @@
 224,225,1,1,"Hoyt, Mr. Frederick Maxfield",male,38.0,1,0,19943,90.0,C93,Southhampton,num,C
 225,226,0,3,"Berglund, Mr. Karl Ivar Sven",male,22.0,0,0,PP 4348,9.35,,Southhampton,pp,None
 226,227,1,2,"Mellors, Mr. William John",male,19.0,0,0,SW/PP 751,10.5,,Southhampton,swpp,None
-227,228,0,3,"Lovell, Mr. John Hall (""Henry"")",male,20.5,0,0,A/5 21173,7.25,,Southhampton,a5,None
+227,228,0,3,"Lovell, Mr. John Hall (""Henry"")",male,20.0,0,0,A/5 21173,7.25,,Southhampton,a5,None
 228,229,0,2,"Fahlstrom, Mr. Arne Jonas",male,18.0,0,0,236171,13.0,,Southhampton,num,None
 229,230,0,3,"Lefebre, Miss. Mathilde",female,,3,1,4133,25.47,,Southhampton,num,None
 230,231,1,1,"Harris, Mrs. Henry Birkhardt (Irene Wallach)",female,35.0,1,0,36973,83.48,C83,Southhampton,num,C
@@ -295,7 +295,7 @@
 293,294,0,3,"Haas, Miss. Aloisia",female,24.0,0,0,349236,8.85,,Southhampton,num,None
 294,295,0,3,"Mineff, Mr. Ivan",male,24.0,0,0,349233,7.9,,Southhampton,num,None
 295,296,0,1,"Lewy, Mr. Ervin G",male,,0,0,PC 17612,27.72,,Cherbourg,pc,None
-296,297,0,3,"Hanna, Mr. Mansour",male,23.5,0,0,2693,7.23,,Cherbourg,num,None
+296,297,0,3,"Hanna, Mr. Mansour",male,23.0,0,0,2693,7.23,,Cherbourg,num,None
 297,298,0,1,"Allison, Miss. Helen Loraine",female,2.0,1,2,113781,151.55,C22 C26,Southhampton,num,C
 298,299,1,1,"Saalfeld, Mr. Adolphe",male,,0,0,19988,30.5,C106,Southhampton,num,C
 299,300,1,1,"Baxter, Mrs. James (Helene DeLaudeniere Chaput)",female,50.0,0,1,PC 17558,247.52,B58 B60,Cherbourg,pc,B
@@ -304,7 +304,7 @@
 302,303,0,3,"Johnson, Mr. William Cahoone Jr",male,19.0,0,0,LINE,0.0,,Southhampton,lin,None
 303,304,1,2,"Keane, Miss. Nora A",female,,0,0,226593,12.35,E101,Queenstown,num,E
 304,305,0,3,"Williams, Mr. Howard Hugh ""Harry""",male,,0,0,A/5 2466,8.05,,Southhampton,a5,None
-305,306,1,1,"Allison, Master. Hudson Trevor",male,0.92,1,2,113781,151.55,C22 C26,Southhampton,num,C
+305,306,1,1,"Allison, Master. Hudson Trevor",male,0.0,1,2,113781,151.55,C22 C26,Southhampton,num,C
 306,307,1,1,"Fleming, Miss. Margaret",female,,0,0,17421,110.88,,Cherbourg,num,None
 307,308,1,1,"Penasco y Castellana, Mrs. Victor de Satode (Maria Josefa Perez de Soto y Vallejo)",female,17.0,1,0,PC 17758,108.9,C65,Cherbourg,pc,C
 308,309,0,2,"Abelson, Mr. Samuel",male,30.0,1,0,P/PP 3381,24.0,,Cherbourg,ppp,None
@@ -330,7 +330,7 @@
 328,329,1,3,"Goldsmith, Mrs. Frank John (Emily Alice Brown)",female,31.0,1,1,363291,20.52,,Southhampton,num,None
 329,330,1,1,"Hippach, Miss. Jean Gertrude",female,16.0,0,1,111361,57.98,B18,Cherbourg,num,B
 330,331,1,3,"McCoy, Miss. Agnes",female,,2,0,367226,23.25,,Queenstown,num,None
-331,332,0,1,"Partner, Mr. Austen",male,45.5,0,0,113043,28.5,C124,Southhampton,num,C
+331,332,0,1,"Partner, Mr. Austen",male,45.0,0,0,113043,28.5,C124,Southhampton,num,C
 332,333,0,1,"Graham, Mr. George Edward",male,38.0,0,1,PC 17582,153.46,C91,Southhampton,pc,C
 333,334,0,3,"Vander Planke, Mr. Leo Edmondus",male,16.0,2,0,345764,18.0,,Southhampton,num,None
 334,335,1,1,"Frauenthal, Mrs. Henry William (Clara Heinsheimer)",female,,1,0,PC 17611,133.65,,Southhampton,pc,None
@@ -468,7 +468,7 @@
 466,467,0,2,"Campbell, Mr. William",male,,0,0,239853,0.0,,Southhampton,num,None
 467,468,0,1,"Smart, Mr. John Montgomery",male,56.0,0,0,113792,26.55,,Southhampton,num,None
 468,469,0,3,"Scanlan, Mr. James",male,,0,0,36209,7.72,,Queenstown,num,None
-469,470,1,3,"Baclini, Miss. Helene Barbara",female,0.75,2,1,2666,19.26,,Cherbourg,num,None
+469,470,1,3,"Baclini, Miss. Helene Barbara",female,0.0,2,1,2666,19.26,,Cherbourg,num,None
 470,471,0,3,"Keefe, Mr. Arthur",male,,0,0,323592,7.25,,Southhampton,num,None
 471,472,0,3,"Cacic, Mr. Luka",male,38.0,0,0,315089,8.66,,Southhampton,num,None
 472,473,1,2,"West, Mrs. Edwy Arthur (Ada Mary Worth)",female,33.0,1,2,C.A. 34651,27.75,,Southhampton,ca,None
@@ -524,7 +524,7 @@
 522,523,0,3,"Lahoud, Mr. Sarkis",male,,0,0,2624,7.22,,Cherbourg,num,None
 523,524,1,1,"Hippach, Mrs. Louis Albert (Ida Sophia Fischer)",female,44.0,0,1,111361,57.98,B18,Cherbourg,num,B
 524,525,0,3,"Kassem, Mr. Fared",male,,0,0,2700,7.23,,Cherbourg,num,None
-525,526,0,3,"Farrell, Mr. James",male,40.5,0,0,367232,7.75,,Queenstown,num,None
+525,526,0,3,"Farrell, Mr. James",male,40.0,0,0,367232,7.75,,Queenstown,num,None
 526,527,1,2,"Ridsdale, Miss. Lucy",female,50.0,0,0,W./C. 14258,10.5,,Southhampton,wc,None
 527,528,0,1,"Farthing, Mr. John",male,,0,0,PC 17483,221.78,C95,Southhampton,pc,C
 528,529,0,3,"Salonen, Mr. Johan Werner",male,39.0,0,0,3101296,7.92,,Southhampton,num,None
@@ -643,7 +643,7 @@
 641,642,1,1,"Sagesser, Mlle. Emma",female,24.0,0,0,PC 17477,69.3,B35,Cherbourg,pc,B
 642,643,0,3,"Skoog, Miss. Margit Elizabeth",female,2.0,3,2,347088,27.9,,Southhampton,num,None
 643,644,1,3,"Foo, Mr. Choong",male,,0,0,1601,56.5,,Southhampton,num,None
-644,645,1,3,"Baclini, Miss. Eugenie",female,0.75,2,1,2666,19.26,,Cherbourg,num,None
+644,645,1,3,"Baclini, Miss. Eugenie",female,0.0,2,1,2666,19.26,,Cherbourg,num,None
 645,646,1,1,"Harper, Mr. Henry Sleeper",male,48.0,1,0,PC 17572,76.73,D33,Cherbourg,pc,D
 646,647,0,3,"Cor, Mr. Liudevit",male,19.0,0,0,349231,7.9,,Southhampton,num,None
 647,648,1,1,"Simonius-Blumer, Col. Oberst Alfons",male,56.0,0,0,13213,35.5,A26,Cherbourg,num,A
@@ -675,7 +675,7 @@
 673,674,1,2,"Wilhelms, Mr. Charles",male,31.0,0,0,244270,13.0,,Southhampton,num,None
 674,675,0,2,"Watson, Mr. Ennis Hastings",male,,0,0,239856,0.0,,Southhampton,num,None
 675,676,0,3,"Edvardsson, Mr. Gustaf Hjalmar",male,18.0,0,0,349912,7.78,,Southhampton,num,None
-676,677,0,3,"Sawyer, Mr. Frederick Charles",male,24.5,0,0,342826,8.05,,Southhampton,num,None
+676,677,0,3,"Sawyer, Mr. Frederick Charles",male,24.0,0,0,342826,8.05,,Southhampton,num,None
 677,678,1,3,"Turja, Miss. Anna Sofia",female,18.0,0,0,4138,9.84,,Southhampton,num,None
 678,679,0,3,"Goodwin, Mrs. Frederick (Augusta Tyler)",female,43.0,1,6,CA 2144,46.9,,Southhampton,ca,None
 679,680,1,1,"Cardeza, Mr. Thomas Drake Martinez",male,36.0,0,1,PC 17755,512.33,B51 B53 B55,Cherbourg,pc,B
@@ -734,7 +734,7 @@
 732,733,0,2,"Knight, Mr. Robert J",male,,0,0,239855,0.0,,Southhampton,num,None
 733,734,0,2,"Berriman, Mr. William John",male,23.0,0,0,28425,13.0,,Southhampton,num,None
 734,735,0,2,"Troupiansky, Mr. Moses Aaron",male,23.0,0,0,233639,13.0,,Southhampton,num,None
-735,736,0,3,"Williams, Mr. Leslie",male,28.5,0,0,54636,16.1,,Southhampton,num,None
+735,736,0,3,"Williams, Mr. Leslie",male,28.0,0,0,54636,16.1,,Southhampton,num,None
 736,737,0,3,"Ford, Mrs. Edward (Margaret Ann Watson)",female,48.0,1,3,W./C. 6608,34.38,,Southhampton,wc,None
 737,738,1,1,"Lesurer, Mr. Gustave J",male,35.0,0,0,PC 17755,512.33,B101,Cherbourg,pc,B
 738,739,0,3,"Ivanoff, Mr. Kanio",male,,0,0,349201,7.9,,Southhampton,num,None
@@ -754,7 +754,7 @@
 752,753,0,3,"Vande Velde, Mr. Johannes Joseph",male,33.0,0,0,345780,9.5,,Southhampton,num,None
 753,754,0,3,"Jonkoff, Mr. Lalio",male,23.0,0,0,349204,7.9,,Southhampton,num,None
 754,755,1,2,"Herman, Mrs. Samuel (Jane Laver)",female,48.0,1,2,220845,65.0,,Southhampton,num,None
-755,756,1,2,"Hamalainen, Master. Viljo",male,0.67,1,1,250649,14.5,,Southhampton,num,None
+755,756,1,2,"Hamalainen, Master. Viljo",male,0.0,1,1,250649,14.5,,Southhampton,num,None
 756,757,0,3,"Carlsson, Mr. August Sigfrid",male,28.0,0,0,350042,7.8,,Southhampton,num,None
 757,758,0,2,"Bailey, Mr. Percy Andrew",male,18.0,0,0,29108,11.5,,Southhampton,num,None
 758,759,0,3,"Theobald, Mr. Thomas Leonard",male,34.0,0,0,363294,8.05,,Southhampton,num,None
@@ -766,7 +766,7 @@
 764,765,0,3,"Eklund, Mr. Hans Linus",male,16.0,0,0,347074,7.78,,Southhampton,num,None
 765,766,1,1,"Hogeboom, Mrs. John C (Anna Andrews)",female,51.0,1,0,13502,77.96,D11,Southhampton,num,D
 766,767,0,1,"Brewe, Dr. Arthur Jackson",male,,0,0,112379,39.6,,Cherbourg,num,None
-767,768,0,3,"Mangan, Miss. Mary",female,30.5,0,0,364850,7.75,,Queenstown,num,None
+767,768,0,3,"Mangan, Miss. Mary",female,30.0,0,0,364850,7.75,,Queenstown,num,None
 768,769,0,3,"Moran, Mr. Daniel J",male,,1,0,371110,24.15,,Queenstown,num,None
 769,770,0,3,"Gronnestad, Mr. Daniel Danielsen",male,32.0,0,0,8471,8.36,,Southhampton,num,None
 770,771,0,3,"Lievens, Mr. Rene Aime",male,24.0,0,0,345781,9.5,,Southhampton,num,None
@@ -802,7 +802,7 @@
 800,801,0,2,"Ponesell, Mr. Martin",male,34.0,0,0,250647,13.0,,Southhampton,num,None
 801,802,1,2,"Collyer, Mrs. Harvey (Charlotte Annie Tate)",female,31.0,1,1,C.A. 31921,26.25,,Southhampton,ca,None
 802,803,1,1,"Carter, Master. William Thornton II",male,11.0,1,2,113760,120.0,B96 B98,Southhampton,num,B
-803,804,1,3,"Thomas, Master. Assad Alexander",male,0.42,0,1,2625,8.52,,Cherbourg,num,None
+803,804,1,3,"Thomas, Master. Assad Alexander",male,0.0,0,1,2625,8.52,,Cherbourg,num,None
 804,805,1,3,"Hedman, Mr. Oskar Arvid",male,27.0,0,0,347089,6.98,,Southhampton,num,None
 805,806,0,3,"Johansson, Mr. Karl Johan",male,31.0,0,0,347063,7.78,,Southhampton,num,None
 806,807,0,1,"Andrews, Mr. Thomas Jr",male,39.0,0,0,112050,0.0,A36,Southhampton,num,A
@@ -813,7 +813,7 @@
 811,812,0,3,"Lester, Mr. James",male,39.0,0,0,A/4 48871,24.15,,Southhampton,a4,None
 812,813,0,2,"Slemen, Mr. Richard James",male,35.0,0,0,28206,10.5,,Southhampton,num,None
 813,814,0,3,"Andersson, Miss. Ebba Iris Alfrida",female,6.0,4,2,347082,31.28,,Southhampton,num,None
-814,815,0,3,"Tomlin, Mr. Ernest Portage",male,30.5,0,0,364499,8.05,,Southhampton,num,None
+814,815,0,3,"Tomlin, Mr. Ernest Portage",male,30.0,0,0,364499,8.05,,Southhampton,num,None
 815,816,0,1,"Fry, Mr. Richard",male,,0,0,112058,0.0,B102,Southhampton,num,B
 816,817,0,3,"Heininen, Miss. Wendla Maria",female,23.0,0,0,STON/O2. 3101290,7.92,,Southhampton,stono2,None
 817,818,0,2,"Mallet, Mr. Albert",male,31.0,1,1,S.C./PARIS 2079,37.0,,Cherbourg,scparis,None
@@ -830,7 +830,7 @@
 828,829,1,3,"McCormack, Mr. Thomas Joseph",male,,0,0,367228,7.75,,Queenstown,num,None
 829,830,1,1,"Stone, Mrs. George Nelson (Martha Evelyn)",female,62.0,0,0,113572,80.0,B28,Unknown,num,B
 830,831,1,3,"Yasbeck, Mrs. Antoni (Selini Alexander)",female,15.0,1,0,2659,14.45,,Cherbourg,num,None
-831,832,1,2,"Richards, Master. George Sibley",male,0.83,1,1,29106,18.75,,Southhampton,num,None
+831,832,1,2,"Richards, Master. George Sibley",male,0.0,1,1,29106,18.75,,Southhampton,num,None
 832,833,0,3,"Saad, Mr. Amin",male,,0,0,2671,7.23,,Cherbourg,num,None
 833,834,0,3,"Augustsson, Mr. Albert",male,23.0,0,0,347468,7.85,,Southhampton,num,None
 834,835,0,3,"Allum, Mr. Owen George",male,18.0,0,0,2223,8.3,,Southhampton,num,None
@@ -842,7 +842,7 @@
 840,841,0,3,"Alhomaki, Mr. Ilmari Rudolf",male,20.0,0,0,SOTON/O2 3101287,7.92,,Southhampton,sotono2,None
 841,842,0,2,"Mudd, Mr. Thomas Charles",male,16.0,0,0,S.O./P.P. 3,10.5,,Southhampton,sopp,None
 842,843,1,1,"Serepeca, Miss. Augusta",female,30.0,0,0,113798,31.0,,Cherbourg,num,None
-843,844,0,3,"Lemberopolous, Mr. Peter L",male,34.5,0,0,2683,6.44,,Cherbourg,num,None
+843,844,0,3,"Lemberopolous, Mr. Peter L",male,34.0,0,0,2683,6.44,,Cherbourg,num,None
 844,845,0,3,"Culumovic, Mr. Jeso",male,17.0,0,0,315090,8.66,,Southhampton,num,None
 845,846,0,3,"Abbing, Mr. Anthony",male,42.0,0,0,C.A. 5547,7.55,,Southhampton,ca,None
 846,847,0,3,"Sage, Mr. Douglas Bullen",male,,8,2,CA. 2343,69.55,,Southhampton,ca,None
