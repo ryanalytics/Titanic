@@ -29,9 +29,6 @@ colSums(is.na(train))
 #Give a summary of each column of data 
 summary(train)
 
-#Some ages have .5 to show they are an approximation, this drops all of those .5's
-train$Age <- trunc(train$Age)
-
 #Create Data frame listing who survived and who died, will be used for graphs 
 Status <- train$Survived
 Status[which(Status == 1)] <- 'Survived'
@@ -89,7 +86,7 @@ qhpvt(train, 'Ticket.Letters', 'Survived', 'n()')
 dev.new()
 
 #Plot of passengers per Fare price
-SurG8 <- qplot(train$Fare, geom='histogram', fill = I("blue"))
+SurG8 <- qplot(train$Fare, geom='histogram', fill = I("blue"), main = 'Number of Passengers per Amount of Fare Paid', ylab = 'Number of Passengers', xlab = 'Amount of Fare Paid')
 SurG8
 #Pivot table of survivors by fare price
 qhpvt(train, 'Fare', 'Survived', 'n()')
@@ -115,4 +112,6 @@ dev.new()
 x <- cor(train[,c(6,7,8,10)], , use = 'complete.obs', method = c("pearson", "kendall", "spearman"))
 melted_x <- melt(x)
 ggplot(data = melted_x, aes(x=Var1, y=Var2, fill=value)) + geom_tile()
+
+
 
