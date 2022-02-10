@@ -1,4 +1,5 @@
 import pandas
+import math
 
 #Function reads in csv file containing Titanic data and cleans the data, NewFile writes cleaned data to new file 
 def DataClean(File, NewFile):
@@ -67,6 +68,15 @@ def DataClean(File, NewFile):
     #Round values in Fare to two decimal places 
     for m in range(len(DataFare)):
         Data.at[m, 'Fare'] = round(Data['Fare'][m], 2).copy()
+
+    #Create list for Age column values
+    DataAge = Data['Age'].tolist()
+
+    #Truncate Age because .5 denotes estimate
+    for n in range(len(DataAge)):
+        #If value is not NaN then truncate
+        if not pandas.isna(Data.at[n, 'Age']):
+            Data.at[n, 'Age'] = math.trunc(Data['Age'][n])
 
     #Save data frame changes to new csv file 
     Data.to_csv(NewFile)
