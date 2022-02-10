@@ -107,6 +107,19 @@ qhpvt(train, 'Embarked', 'Survived', 'n()')
 
 dev.new()
 
+#Normalized Fare
+qplot(log(train$Fare+1), geom='histogram', fill = I("blue"), main = 'Number of Passengers per Amount of log(Fare + 1) Paid', ylab = 'Number of Passengers', xlab = 'log(Fare + 1)')
+
+dev.new()
+
+#Normalize Sibsp
+ggplot(train, aes(x=log(SibSp+1))) + geom_histogram(stat='count', fill = 'Blue') + ggtitle('Number of log(Siblings/Spouses+1) for each Passenger') + ylab('Number of Passengers') + xlab('log(Siblings/Spouses + 1)')
+
+dev.new()
+
+#Normalize Parch
+ggplot(train, aes(x=log(Parch+1))) + geom_histogram(stat='count', fill = 'Blue') + ggtitle('Number of log(Parents/Children+1) for each Passenger)') + ylab('Number of Passengers') + xlab('log(Children/Parents + 1')
+dev.new()
 
 #Create a correlation table to check for multicollinearity
 x <- cor(train[,c(6,7,8,10)], , use = 'complete.obs', method = c("pearson", "kendall", "spearman"))
