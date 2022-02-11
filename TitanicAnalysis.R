@@ -1,50 +1,42 @@
 library('caret')
 
 
-
 #Get data for both model building and predictions and turn them into data frames
 train <- read.csv(TrainLoc)
 test <- read.csv(TestLoc)
 train <- as.data.frame(train)
-test <- as.data.frame(test)
+test <- as.data.frame(testl)
 
 #replace missing age values with the mean of ages
 AgeMean <- mean(train[-which(is.na(train$Age)),7])
 
 train[which(is.na(train$Age)),7] <- AgeMean
 test[which(is.na(test$Age)),6] <- AgeMean
+test[which(is.na(test$Fare)),10] <- 0
 
 #Remove rows where embarked location is unknown
 train <- subset(train, Embarked != 'Unknown')
 
 #First model with be multiple logistic regression 
 
-#Model with all variable included 
-Model1 <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked + Ticket.Letters + Cabin.Letters, data = train, family = binomial)
+#Model with all variables included, Fare is normalized with log(Fare + 1) 
+Model1 <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + log(Fare+1) + Embarked + Ticket.Letters + Cabin.Letters, data = train, family = binomial)
 summary(Model1)
 
-#Model after removing Ticket Letter because it was the least significant and p value was greater than .05
-Model2 <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked + Cabin.Letters, data = train, family = binomial)
+#Do likelihood Ratio Test(LRT) to see if we should remove Ticket.Letters
+ReducedModel1 <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + log(Fare+1) + Embarked + Cabin.Letters, data = train, family = binomial)
+anova(ReducedModel1, Model1, test ="LRT")
+
+#Do likelihood Ratio Test(LRT) to see if we should remove Cabin.Letters
+ReducedModel1b <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + log(Fare+1) + Embarked, data = train, family = binomial)
+anova(ReducedModel1b, Model1, test ="LRT")
+
+#Remove Parch because it appears to be insignificant
+Model2 <- glm(Survived ~ Pclass + Sex + Age + SibSp + log(Fare+1) + Embarked + Ticket.Letters + Cabin.Letters, data = train, family = binomial)
 summary(Model2)
 
-#Model after removing Cabin Letter because it was the least significant and p value was greater than .05
-Model3 <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked, data = train, family = binomial)
-summary(Model3)
-
-#Model after removing embarked location because it was the least significant and p value was greater than .05
-Model4 <- glm(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare, data = train, family = binomial)
-summary(Model4)
-
-#Model after removing parch location because it was the least significant and p value was greater than .05
-Model5 <- glm(Survived ~ Pclass + Sex + Age + SibSp + Fare, data = train, family = binomial)
-summary(Model5)
-
-#Model after removing parch location because it was the least significant and p value was greater than .05
-Model6 <- glm(Survived ~ Pclass + Sex + Age + SibSp, data = train, family = binomial)
-summary(Model6)
-
-#Model6 appears to have all significant variables
-#Next section will be using cross validation to test model 
+#Model2 appears to have all significant values
+#Next section will be using cross validation to test model
 
 set.seed(123)
 
@@ -52,15 +44,21 @@ set.seed(123)
 Sample1  <- createDataPartition(train$Pclass, p = .75, list = FALSE)
 
 #Data for using in the model
-Training <- train[sample1,]
+Training <- train[Sample1,]
 
 #Data used for prediction
-Testing<- train[-sample1,]
+Testing<- train[-Sample1,]
 
 #Create model with 75 percent of data
-ModelTrain<- glm(Survived ~ Pclass + Sex + Age + SibSp, data=Training, family = binomial)
+ModelTrain<- glm(Survived ~ Pclass + Sex + Age + SibSp + log(Fare+1) + Embarked + Ticket.Letters + Cabin.Letters, data=Training, family = binomial)
 ModelTrain
 summary(ModelTrain)
+
+#Removes ticket letters that may not appear in the test sample we took so we can run the test model
+Testing <- subset(Testing, !Ticket.Letters %in% c('sc', 'sca4', 'sp')) 
+
+#x <- Testing[Testing$Ticket %in% Levels,]
+
 #Run model with rest of data
 Results <- predict(ModelTrain, type = 'response', newdata = Testing)
 
@@ -91,7 +89,8 @@ PassengerId = test$PassengerId
 #Create blank vector to be used for prediction of each passenger, 1 = survived, 0 = died
 Survived = c()
 #Get logistic prediction for each passenger in test
-FinalResults <- predict(ModelTrain ,type = 'response', newdata= test)
+FinalModel <- glm(Survived ~ Pclass + Sex + Age + SibSp + log(Fare+1) + Embarked + Cabin.Letters, data=train, family = binomial) 
+FinalResults <- predict(FinalModel ,type = 'response', newdata= test)
 
 #If percentage is less than .5 change to 0, if equal or greater change to 1
 for(k in 1:length(PassengerId)){
