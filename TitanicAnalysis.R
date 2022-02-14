@@ -88,17 +88,25 @@ CorrectPerc <- Correct/length(Results)
 PassengerId = test$PassengerId
 #Create blank vector to be used for prediction of each passenger, 1 = survived, 0 = died
 Survived = c()
-#Get logistic prediction for each passenger in test
-FinalModel <- glm(Survived ~ Pclass + Sex + Age + SibSp + log(Fare+1) + Embarked + Cabin.Letters, data=train, family = binomial) 
-FinalResults <- predict(FinalModel ,type = 'response', newdata= test)
-
+FinalResults = c()
+#Get logistic prediction for each passenger in test, full model for those with ticket.letters that exist in train, partial model for the rest
+for(a in 1:nrow(test)){
+	if(test$Ticket.Letters[a] %in% c('a','aq3','aq4','lp','sca3','stonoq')){
+		FinalModel <- glm(Survived ~ Pclass + Sex + Age + SibSp + log(Fare+1) + Embarked + Cabin.Letters, data=train, family = binomial) 
+		FinalResults <- append(FinalResults, predict(FinalModel ,type = 'response', newdata= test[a,]))
+	}
+	else{
+		FinalModel <- glm(Survived ~ Pclass + Sex + Age + SibSp + log(Fare+1) + Embarked + Ticket.Letters + Cabin.Letters, data=train, family = binomial) 
+		FinalResults <- append(FinalResults, predict(FinalModel ,type = 'response', newdata= test[a,]))
+	}
+}
 #If percentage is less than .5 change to 0, if equal or greater change to 1
 for(k in 1:length(PassengerId)){
 	if(FinalResults[k] < .5){
-		Survived = append(Survived, 0)
+		Survived <- append(Survived, 0)
 	}
 	else{
-		Survived = append(Survived, 1)
+		Survived <- append(Survived, 1)
 	}
 }
 
